@@ -9,13 +9,18 @@ body {
     flex-direction: column;
     justify-content: stretch;
     align-items: stretch;
+
+    background-position: center; /* Create fixed background */
+    background-size: cover;
+    background-image: url(../images/pro-church-media-playroom.jpg);
+    background-attachment: fixed;
 }
 
-#header, #footer {
+#header, #footer, #options {
     text-align: center;
-    padding-top: 24px;
-    padding-bottom: 24px;  
-    background-color: rgb(170, 118, 219); 
+    padding-top: 12px;
+    padding-bottom: 12px;  
+    background-color: rgba(204, 161, 224, 0.95); 
 }
 
 #header {
@@ -27,13 +32,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5%;
 }
 
 #board-container {
-    margin: 12px;
+    margin: 2%;
     flex-basis: 40%;
-    border: 24px solid red;
+    border: 24px solid rgb(255, 0, 0);
+    box-shadow: 18px 18px 12px black;
     border-radius: 12px;
+}
+
+#options {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
 }
 
 #footer {

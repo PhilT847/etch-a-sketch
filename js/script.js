@@ -1,5 +1,7 @@
 /* script.js */
+
 let boardSize = 16;
+let penColor = "black";
 
 const boardContainer = document.querySelector("#board-container");
 const etchBoard = document.createElement("div");
@@ -30,7 +32,17 @@ function generateTiles() {
             tile.style.aspectRatio = "1/1";
 
             tile.addEventListener("mouseover", () => {
-                tile.style.backgroundColor = getRandomColor();
+                let chosenColor = penColor;
+
+                if(chosenColor != "random") {
+
+                    tile.style.backgroundColor = penColor;
+                }
+                else {
+
+                    tile.style.backgroundColor = getRandomColor();
+                }
+                
             });
 
             col.appendChild(tile);
