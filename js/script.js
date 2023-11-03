@@ -19,6 +19,10 @@ function createOptions() {
     penColorButton.classList.add("options-button");
     penColorButton.style.backgroundColor = "black";
 
+    // Add background image (for rainbow when pen = random)
+    penColorButton.style.backgroundImage = "none";
+    penColorButton.style.backgroundSize = "cover";
+
     penColorButton.addEventListener("click", () => {
 
         toggleColor();
@@ -26,11 +30,14 @@ function createOptions() {
         if(penColor != "random") {
 
             penColorButton.style.backgroundColor = penColor;
+            penColorButton.style.backgroundImage = "none";
         }
         else{
 
-            penColorButton.style.backgroundColor = "purple";
+            penColorButton.style.backgroundImage = "url('./images/rainbow.png')";
         }
+
+        
     });
 
     boardSizeButton.classList.add("options-button");

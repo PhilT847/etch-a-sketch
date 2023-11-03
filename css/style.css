@@ -58,12 +58,15 @@ body {
     height: auto;
 }
 
-.options-button {
+.options-button, .rainbow-image {
     border: 3px solid rgb(99, 0, 138);
+    border-radius: 12px;
+}
+
+.options-button {
     font-weight: 700;
     width: 50px;
     height: 50px;
-    border-radius: 12px;
 }
 
 .etchBoard {
