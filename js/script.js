@@ -28,7 +28,27 @@ function generateTiles() {
             const tile = document.createElement("div");
             tile.classList.add("tile");
             tile.style.aspectRatio = "1/1";
+
+            tile.addEventListener("mouseover", () => {
+                tile.style.backgroundColor = getRandomColor();
+            });
+
             col.appendChild(tile);
         }
     }
+}
+
+function getRandomColor() {
+
+    let fullColor = "rgb(";
+
+    let randomR = Math.random() * 256;
+    let randomG = Math.random() * 256;
+    let randomB = Math.random() * 256;
+
+    fullColor += randomR + ", ";
+    fullColor += randomG + ", ";
+    fullColor += randomB + ")";
+
+    return fullColor;
 }
