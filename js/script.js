@@ -65,7 +65,7 @@ function createOptions() {
 
 function createBoard() {
 
-    etchBoard.classList.add("etchBoard");
+    etchBoard.classList.add("etch-board");
     boardContainer.appendChild(etchBoard);
     generateTiles();
 }

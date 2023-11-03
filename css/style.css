@@ -64,7 +64,7 @@ body {
     height: 60px;
 }
 
-.etchBoard {
+.etch-board {
     flex-grow: 1;
     aspect-ratio: 1/1;
     background-color: white;
