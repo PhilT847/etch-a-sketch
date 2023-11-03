@@ -1,0 +1,36 @@
+/* style.css */
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 100vh;
+    margin: 0; /* Remove default margin */
+    display: flex; /* Align sections vertically */
+    background-color: rgb(217, 183, 255);
+    color: white;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+#header, #footer {
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;  
+    background-color: rgb(170, 118, 219); 
+}
+
+#header {
+
+}
+
+#content {
+    flex-grow: 1; /* fill all open screen */
+}
+
+#footer {
+    
+}
+
+.logo {
+    width: 40%;
+    height: auto;
+}
