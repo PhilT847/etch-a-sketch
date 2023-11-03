@@ -9,6 +9,7 @@ body {
     color: white;
     flex-direction: column;
     justify-content: stretch;
+    align-items: stretch;
 }
 
 #header, #footer {
@@ -24,6 +25,14 @@ body {
 
 #content {
     flex-grow: 1; /* fill all open screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#board-container {
+    margin: 12px;
+    flex-basis: 40%;
 }
 
 #footer {
@@ -33,4 +42,24 @@ body {
 .logo {
     width: 40%;
     height: auto;
+}
+
+.etchBoard {
+    flex-grow: 1;
+    aspect-ratio: 1/1;
+    background-color: white;
+    display: flex;
+    justify-content: stretch;
+}
+
+.column {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+
+.tile {
+    background-color: white;
+    min-width: 10px;
 }
