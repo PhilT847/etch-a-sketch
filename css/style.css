@@ -16,11 +16,16 @@ body {
     background-attachment: fixed;
 }
 
-#header, #footer, #options {
+#header, #footer {
     text-align: center;
-    padding-top: 8px;
-    padding-bottom: 8px;  
+    padding: 12px 10%; 
     background-color: rgba(204, 161, 224, 0.8); 
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #content {
@@ -39,9 +44,9 @@ body {
 }
 
 #options {
+    width: 160px;
     display: flex;
-    justify-content: center;
-    gap: 48px;
+    justify-content: space-between;
 }
 
 .logo {
@@ -50,11 +55,12 @@ body {
 }
 
 .options-button {
+    min-width: 0;
     border: 4px solid rgb(99, 0, 138);
     border-radius: 12px;
     font-weight: 700;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
 
 .etchBoard {
