@@ -1,6 +1,6 @@
 /* script.js */
 
-let boardSize = 100;
+let boardSize = 16;
 let penColor = "black";
 let mouseDown = false;
 
@@ -153,7 +153,7 @@ function selectBoardSize() {
             selection = 1;
         }
         else if(selection > 100) {
-            
+
             selection = 100;
         }
 
