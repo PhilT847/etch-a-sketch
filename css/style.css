@@ -32,8 +32,7 @@ body {
 }
 
 #board-container {
-    margin: 2%;
-    flex-basis: 40%;
+    flex-basis: 30%;
     border: 24px solid rgb(255, 0, 0);
     box-shadow: 18px 18px 12px black;
     border-radius: 12px;
