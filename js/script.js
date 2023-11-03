@@ -10,6 +10,7 @@ const etchBoard = document.createElement("div");
 const optionsContainer = document.querySelector("#options");
 const penColorButton = document.createElement("button");
 const boardSizeButton = document.createElement("button");
+const resetButton = document.createElement("button");
 
 createOptions();
 createBoard();
@@ -46,8 +47,20 @@ function createOptions() {
         selectBoardSize();
     });
 
+    resetButton.classList.add("options-button");
+    resetButton.style.backgroundImage = "url('./images/clear.png')";
+    resetButton.style.backgroundSize = "cover";
+
+    resetButton.addEventListener("click", () => {
+
+        // Remove etchBoard's children and regenerate tiles
+        etchBoard.replaceChildren();
+        generateTiles();
+    });
+
     optionsContainer.appendChild(penColorButton);
     optionsContainer.appendChild(boardSizeButton);
+    optionsContainer.appendChild(resetButton);
 }
 
 function createBoard() {

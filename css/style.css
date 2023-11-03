@@ -44,7 +44,7 @@ body {
 }
 
 #options {
-    width: 160px;
+    width: 240px;
     display: flex;
     justify-content: space-between;
 }
