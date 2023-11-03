@@ -23,10 +23,6 @@ body {
     background-color: rgba(204, 161, 224, 0.8); 
 }
 
-#header {
-
-}
-
 #content {
     flex-grow: 1; /* fill all open screen */
     display: flex;
@@ -47,10 +43,6 @@ body {
     display: flex;
     justify-content: center;
     gap: 48px;
-}
-
-#footer {
-    
 }
 
 .logo {

@@ -35,9 +35,7 @@ function createOptions() {
         else{
 
             penColorButton.style.backgroundImage = "url('./images/rainbow.png')";
-        }
-
-        
+        }        
     });
 
     boardSizeButton.classList.add("options-button");
@@ -55,9 +53,7 @@ function createOptions() {
 function createBoard() {
 
     etchBoard.classList.add("etchBoard");
-
     boardContainer.appendChild(etchBoard);
-
     generateTiles();
 }
 
@@ -140,7 +136,7 @@ function getRandomColor() {
 
 function selectBoardSize() {
 
-    let selection = prompt("Select a size (1-100)", boardSize);
+    let selection = prompt("Select a size (1-100).", boardSize);
 
     selection = parseInt(selection);
 
