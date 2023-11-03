@@ -12,7 +12,7 @@ body {
 
     background-position: center; /* Create fixed background */
     background-size: cover;
-    background-image: url(../images/pro-church-media-playroom.jpg);
+    background-image: url(../images/pro-church-media-playroom-blur.png);
     background-attachment: fixed;
 }
 
@@ -20,7 +20,7 @@ body {
     text-align: center;
     padding-top: 12px;
     padding-bottom: 12px;  
-    background-color: rgba(204, 161, 224, 0.95); 
+    background-color: rgba(204, 161, 224, 0.9); 
 }
 
 #header {

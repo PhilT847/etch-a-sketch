@@ -2,11 +2,16 @@
 
 let boardSize = 16;
 let penColor = "black";
+let mouseDown = false;
 
 const boardContainer = document.querySelector("#board-container");
 const etchBoard = document.createElement("div");
 
 createBoard();
+
+function createOptions() {
+
+}
 
 function createBoard() {
 
@@ -32,17 +37,20 @@ function generateTiles() {
             tile.style.aspectRatio = "1/1";
 
             tile.addEventListener("mouseover", () => {
-                let chosenColor = penColor;
 
-                if(chosenColor != "random") {
+                if(mouseDown){
 
-                    tile.style.backgroundColor = penColor;
+                    let chosenColor = penColor;
+
+                    if(chosenColor != "random") {
+    
+                        tile.style.backgroundColor = penColor;
+                    }
+                    else {
+    
+                        tile.style.backgroundColor = getRandomColor();
+                    }
                 }
-                else {
-
-                    tile.style.backgroundColor = getRandomColor();
-                }
-                
             });
 
             col.appendChild(tile);
@@ -63,4 +71,15 @@ function getRandomColor() {
     fullColor += randomB + ")";
 
     return fullColor;
+}
+
+// Detect whether mouse is down and pen can press
+window.onmousedown = () => {
+    
+    mouseDown = true;
+}
+
+window.onmouseup = () => {
+
+    mouseDown = false;
 }
