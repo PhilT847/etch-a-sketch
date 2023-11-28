@@ -9,6 +9,8 @@ body {
     flex-direction: column;
     justify-content: stretch;
     align-items: stretch;
+    -webkit-user-drag: none;
+    user-select: none;
 
     background-position: center; /* Create fixed background */
     background-size: cover;
